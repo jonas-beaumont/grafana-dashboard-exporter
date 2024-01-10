@@ -21,16 +21,13 @@ To proactively address this issue and safeguard our dashboards, we incorporated 
 
 ## Getting Started
 
-**Create a Grafana API Key:**
-* [Create a Grafana API Key](https://grafana.com/docs/grafana/latest/administration/api-keys/) with admin privileges to access the Grafana API. This key will be used by the script to retrieve dashboard configurations. 
 
 **Create a Configuration File:**
 * In the same directory as the main.py file, create a config.yaml file.
-* Add the following key-value pairs to the config.yaml file, replacing the placeholders with your Grafana instance URL and API key:
+* Add the following key-value pairs to the config.yaml file, replacing the placeholders with your Grafana instance URL including the admin username and password:
 ```
 ---
-grafanaURL: https://grafana.example.com/
-grafanaApiKey: uiohoa8938nakjKNNOin029mibUYFFIYUB8838nJBjbb8bJBibuuib3880bnjajb12bJb2uonNknbsg8yasD8BgfAnmsl1J92bsLhY==
+grafanaURL: https://username:password@grafana.example.com/
 ```
 
 **Execute setup_virtual_env.sh:**
